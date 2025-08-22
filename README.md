@@ -62,7 +62,6 @@ This project combines computer vision with business intelligence to create an in
 - CUDA-capable GPU (recommended for training)
 
 ### Installation
-
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
@@ -101,6 +100,7 @@ This project combines computer vision with business intelligence to create an in
 
 
 ## Supported Component Classes
+
 The system can detect 50 different earring components including:
 - **Pins & Hooks**: Black dot pins, silver hooks, golden hooks
 - **Rings**: Green rings, white rings, yellow rings, black rings
@@ -110,6 +110,7 @@ The system can detect 50 different earring components including:
 
 
 ### Training Configuration
+
 - **Model**: YOLOv8 (medium/large variants)
 - **Dataset**: Custom earring component dataset
 - **Classes**: 50 different component types
@@ -118,6 +119,7 @@ The system can detect 50 different earring components including:
 
 
 ### YOLO Configuration (`earring.yaml`)
+
 ```yaml
 train: /path/to/train/images/
 val: /path/to/validation/images/
@@ -129,12 +131,14 @@ names:
 
 
 ### Flask Configuration
+
 - Upload folder: `./static/`
 - Allowed extensions: jpg, jpeg, png, gif
 - Database connection string in `app.py`
 
 
 ## Performance Metrics
+
 The trained model provides:
 - **Confusion Matrix**: Classification accuracy visualization
 - **Precision-Recall Curves**: Model performance analysis
@@ -143,6 +147,7 @@ The trained model provides:
 
 
 ## Development Tools & Technologies
+
 - **Computer Vision**: YOLOv8 (Ultralytics), OpenCV for image processing and object detection
 - **Machine Learning**: PyTorch backend, custom training pipelines, data augmentation techniques
 - **Web Development**: Flask framework, HTML/CSS templates, responsive web interface
@@ -153,6 +158,7 @@ The trained model provides:
 
 
 ## Acknowledgments
+
 - **Ultralytics**: YOLOv8 implementation
 - **Flask**: Web framework
 - **SQL Server**: Database management
@@ -160,7 +166,7 @@ The trained model provides:
 
 
 ## Support
-For questions and support:
+
 - Check the demo video: [YouTube Demo](https://youtu.be/l5GYNe5-2P8)
 - Review training notebooks in `Yolo/yolo_v8/`
 - Examine the Flask application in `Demo/ngrok http 5000/`
